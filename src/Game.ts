@@ -30,10 +30,14 @@ export class Game {
     }
 
     move(index: number): boolean {
-        // TODO
-        // Если ячейка this.cell[index] занята - возвращает false
-        // Записывает в ячейку cell и возвращает true
-        return true        
+        // TODO        
+        // Определяет, какой символ ходит, и пытается сделать ход 
+        //  с помощью board.move.
+        // Если ход можно сделать, то добавляет  новыу позицию в steps, 
+        //  обновляет current и возвращает true, иначе возвращает false
+        // Нужно учесть, что если вызывалась функция toStep, то 
+        //  current можно указывать не на последний элемент steps
+        return true  
     }
 
     toStep(step: number) {
